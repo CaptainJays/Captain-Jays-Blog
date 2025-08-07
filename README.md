@@ -1,9 +1,5 @@
 
 
-  <h1 align="center">
-    nelsonlai.me
-  </h1>
-
   <img src="https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=Next.js&labelColor=000" alt="Framework" />
   <img src="https://img.shields.io/github/languages/top/tszhong0411/nelsonlai.me?style=for-the-badge&labelColor=000" alt="Language" />
   <img src="https://img.shields.io/github/license/tszhong0411/nelsonlai.me?style=for-the-badge&labelColor=000" alt="License" />
