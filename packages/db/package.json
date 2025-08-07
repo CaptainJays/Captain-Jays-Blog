@@ -1,0 +1,48 @@
+{
+  "name": "@tszhong0411/db",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The ORM for tszhong0411's projects",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    }
+  },
+  "main": "./src/index.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo",
+    "db:check": "pnpm with-env drizzle-kit check",
+    "db:generate": "pnpm with-env drizzle-kit generate",
+    "db:migrate": "pnpm with-env drizzle-kit migrate",
+    "db:push": "pnpm with-env drizzle-kit push",
+    "db:reset": "pnpm with-env tsx ./src/reset.ts",
+    "db:seed": "pnpm with-env tsx ./src/seed.ts",
+    "db:studio": "pnpm with-env drizzle-kit studio",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint --fix .",
+    "type-check": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env.local --"
+  },
+  "lint-staged": {
+    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"
+  },
+  "dependencies": {
+    "@tszhong0411/env": "workspace:*",
+    "drizzle-orm": "^0.44.2"
+  },
+  "devDependencies": {
+    "@tszhong0411/eslint-config": "workspace:*",
+    "@tszhong0411/tsconfig": "workspace:*",
+    "@types/node": "^22.15.29",
+    "@types/pg": "^8.15.4",
+    "consola": "^3.4.2",
+    "drizzle-kit": "^0.31.1",
+    "execa": "^9.6.0",
+    "pg": "^8.16.0"
+  },
+  "peerDependencies": {
+    "pg": "^8"
+  }
+}
