@@ -1,10 +1,4 @@
-<div align="center">
-  <a href="https://nelsonlai.me">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/dark-header.png">
-      <img alt="Project Cover" src="assets/light-header.png">
-    </picture>
-  </a>
+
 
   <h1 align="center">
     nelsonlai.me
